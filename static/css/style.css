@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hd_title > div > div > .hd_link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hd_title > div > div > .hd_link > a {
+    color: blue;
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+}

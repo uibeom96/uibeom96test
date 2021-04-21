@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+컴퍼니
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="row">
+
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        
+        {% if current_category == None %}
+        <div class="main2" style="text-align: center;">
+            <div>
+            <script src="https://ads-partners.coupang.com/g.js"></script>
+            <script>
+                new PartnersCoupang.G({"id":472392,"template":"carousel","trackingCode":"AF3192323","subId":"Linktree","width":"1300","height":"120"});
+                </script>
+                </div>
+        <hr>
+        
+            <script src="https://ads-partners.coupang.com/g.js"></script>
+            <script>
+                new PartnersCoupang.G({"id":472394,"template":"carousel","trackingCode":"AF3192 323","subId":"Linktree","width":"1300","height":"120"});
+                </script>
+
+        </div>
+
+        {% elif current_category.title == "Coupang Only" %}
+        1번
+        
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({"id":472693,"template":"carousel","trackingCode":"AF3192323","subId":"mywebpage","width":"1300","height":"120"});
+        </script>
+
+        {% elif current_category.title == "Coupang 기획전" %}
+        2번
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({"id":472694,"template":"carousel","trackingCode":"AF3192323","subId":"mywebpage","width":"1300","height":"120"});
+        </script>
+
+        {% elif current_category.title == "가전디지털 기획전" %}
+        3번
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({"id":472695,"template":"carousel","trackingCode":"AF3192323","subId":"mywebpage","width":"1300","height":"120"});
+        </script>
+            
+        {% elif current_category.title == "Apple 브랜드 상품" %}
+        4번
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({"id":472691,"template":"carousel","trackingCode":"AF3192323","subId":"mywebpage","width":"1300","height":"120"});
+        </script>
+        {% endif %}
+
+    </div>
+</div>
+<div class="col-md-1"></div>
+{% endblock %}
